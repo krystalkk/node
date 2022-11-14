@@ -5,12 +5,51 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"kkkkkk\" && exit 1",
+    "develop": "nodemon index.js",
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "node-fetch": "^3.2.10",
+    "nodemon": "^2.0.20",
+    "tang-poems": "^1.0.1"
+  }
+}
+
+{
+  "name": "tang-poems",
+  "version": "1.0.0",
+  "description": "Everyday get a tang-poem!",
+  "main": "./index.js",
+  "bin": {
+    "poem": "./cli.js"
+  },
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "author": "carrie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carrie999/poems"
+  },
+  "bugs": {
+    "url": "https://github.com/carrie999/poems/issues"
+  },
+  "homepage": "https://github.com/carrie999/poems",
+  "license": "MIT",
+  "keywords": [
+    "cli-app",
+    "cli",
+    "poems",
+    "chinese",
+    "tang",
+    "everyday",
+    "neural"
+  ],
+  "dependencies": {
+    "got": "^9.6.0",
+    "meow": "^5.0.0"
   }
 }
